@@ -1,5 +1,7 @@
 import Select from "@/components/landing/Select";
 import HomeImage from "@/public/assets/header/home.jpg";
+import Form from "@/components/landing/home/Form";
+import Form2 from "@/components/landing/home/Form2";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
         activeButtonLetter="Home"
         backgroundImage={HomeImage.src}      
       />
+      <Form />
+      <Form2 />
     </>
   );
 }

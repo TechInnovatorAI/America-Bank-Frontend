@@ -3,6 +3,7 @@ import HomeImage from "@/public/assets/header/home.jpg";
 import Form from "@/components/landing/home/Form";
 import Form2 from "@/components/landing/home/Form2";
 import Form3 from "@/components/landing/home/Form3";
+import Form4 from "@/components/landing/home/Form4";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Form />
       <Form2 />
       <Form3 />
+      <Form4 />
     </>
   );
 }

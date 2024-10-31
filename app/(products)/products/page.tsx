@@ -1,4 +1,4 @@
-import Select from "@/components/landing/Select";
+import Select from "@/components/landing/home/Select";
 import Products from "@/components/landing/product/Product";
 import Products2 from "@/components/landing/product/Product2";
 import Products3 from "@/components/landing/product/Product3";

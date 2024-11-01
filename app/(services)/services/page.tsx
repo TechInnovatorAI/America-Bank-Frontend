@@ -1,4 +1,4 @@
-import Select from "@/components/landing/Select";
+import Select from "@/components/landing/home/Select";
 import Services from "@/components/landing/services/Services";
 import Services2 from "@/components/landing/services/Services2";
 import ServicesImage from "@/public/assets/header.jpg";

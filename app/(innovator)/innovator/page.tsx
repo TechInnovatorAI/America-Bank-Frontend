@@ -1,4 +1,4 @@
-import Select from "@/components/landing/Select";
+import Select from "@/components/landing/home/Select";
 import Innovator from "@/components/landing/innovator/Innovator";
 import InnovatorImage from "@/public/assets/header.jpg";
 

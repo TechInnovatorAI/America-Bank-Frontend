@@ -1,5 +1,5 @@
 import Hero from "@/components/landing/about/Hero"
-import Select from "@/components/landing/Select";
+import Select from "@/components/landing/home/Select";
 import AboutUsImage from "@/public/assets/header.jpg";
 
 export default function Home() {

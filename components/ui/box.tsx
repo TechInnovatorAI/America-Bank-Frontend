@@ -13,6 +13,7 @@ interface BoxProps {
     variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"
   }>
   active: string
+  buttonLetter: string
 }
 
 const buttonLetters = [
@@ -29,7 +30,8 @@ export const Box: React.FC<BoxProps> = ({
   letter1,
   letter2,
   buttons,
-  active
+  active,
+  buttonLetter
 }) => {
   return (
     <div
@@ -43,7 +45,7 @@ export const Box: React.FC<BoxProps> = ({
       <span className="text-4xl font-bold mb-4 text-center">{letter1}</span>
       <span className="text-2xl mb-4 text-center">{letter2}</span>
       <div className="flex flex-wrap gap-2 justify-center">
-        {buttons.map((button, index) => (
+        {buttons && buttons.map((button, index) => (
           <Button key={index} variant={button.variant || "default"}>
             {button.text}
           </Button>
@@ -51,7 +53,7 @@ export const Box: React.FC<BoxProps> = ({
       </div>
       <div className="bg-gray-100 w-[100%] pb-0 flex justify-center mt-[2vh]">
         <div className="px-4">
-        {buttonLetters.map((button) => (
+        {buttonLetter==="0" && buttonLetters.map((button) => (
             <Link href={ `/${button.link}`} key={button.text}>
                 <button
                     key={button.text}

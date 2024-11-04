@@ -23,7 +23,7 @@ const Navbar = () => {
     { name: "Personal", href: "/personal" },
     { name: "Small Business", href: "/small-business" },
     { name: "Wealth Management", href: "/wealth-management" },
-    { name: "Business & Institutions", href: "/business-institutions" },
+    { name: "Business & Institutions", href: "/business-institution" },
     { name: "Security", href: "/security" },
     { name: "About Us", href: "/about-us" },
   ];

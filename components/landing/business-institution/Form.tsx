@@ -96,22 +96,22 @@ const Form = () => {
         <Link href="/">
           <Image src={Logo} alt="Logo" width={200} height={80} style={{ height: '45px', objectFit: 'cover', objectPosition: 'center' }} />
         </Link>
-      <div className="flex flex-wrap justify-center">
-        {buttons.map((item) => (
-          <div key={item.id} className="m-2" onMouseEnter={() => setShowDropdown(item.id)} onMouseLeave={() => setShowDropdown(0)}>
-            <button className="dropdown-button">
-              {item.name}
-              <ul className={`dropdown-content ${showDropdown === item.id ? 'show' : ''}`}>
-                {/* {item.children.map((child) => (
-                  <li key={child.id}>
-                    <a href={child.href}>{child.name}</a>
-                  </li>
-                ))} */}
-              </ul>
-            </button>
-          </div>
-        ))}
-      </div>
+        <div className="flex flex-wrap justify-center">
+          {buttons.map((item) => (
+            <div key={item.id} className="m-2" onMouseEnter={() => setShowDropdown(item.id)} onMouseLeave={() => setShowDropdown(0)}>
+              <button className="dropdown-button">
+                {item.name}
+                <ul className={`dropdown-content ${showDropdown === item.id ? 'show' : ''}`}>
+                  {/* {item.children.map((child) => (
+                    <li key={child.id}>
+                      <a href={child.href}>{child.name}</a>
+                    </li>
+                  ))} */}
+                </ul>
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
       {/* Bottom layer */}
       <div className="bg-gray-500 p-4 px-[15%] ">
